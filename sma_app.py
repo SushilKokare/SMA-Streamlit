@@ -39,7 +39,7 @@ def show_marubozu_dates(df):
 
 st.title('Stock Analyzer ')
 
-sym = st.text_input('Enter stock name : ')
+sym = st.text_input('Enter stock symbol : ')
 
 
 st.info('Either select range of date Or Just enter the period',icon=":material/info:")
