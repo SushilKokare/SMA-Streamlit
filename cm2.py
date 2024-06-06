@@ -40,7 +40,7 @@ def marubozu(df,sym):
                     #print('start date ',start_date)
                     #print('end date ',end_date)
                     
-                    df_next = yf.download(sym+'.ns',start=start_date,end=end_date,progress=False,show_errors=False)
+                    df_next = yf.download(sym+'.ns',start=start_date,end=end_date,progress=False)
 
                     if(len(df_next)==0):
                         continue
