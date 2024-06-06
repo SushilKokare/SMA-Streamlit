@@ -12,6 +12,27 @@ import seaborn as sns
 import numpy as np
 
 
+dark = '''
+<style>
+    .stApp {
+    background-color: black;
+    }
+</style>
+'''
+
+light = '''
+<style>
+    .stApp {
+    background-color: white;
+    }
+</style>
+'''
+
+st.markdown(light, unsafe_allow_html=True)
+
+# Create a toggle button
+toggle = st.button("Toggle theme")
+
 def get_data(symbol,start=None,end=None,period='max'):
     df = pd.DataFrame()
     if start:
